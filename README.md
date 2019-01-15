@@ -69,4 +69,4 @@ A trust network among different stakeholders can also be defined and included in
 .6::trusts(ispOp, edgeOp).
 ```
 
-The example without considering trust can be run [here](https://dtai.cs.kuleuven.be/problog/editor.html#task=prob&hash=c0256558fc411afe2f70a38b52058378), whilst the one that includes trust propagation can be run [here](https://dtai.cs.kuleuven.be/problog/editor.html#task=prob&hash=c2dbc5365823fa7e99c37bafd8b7f7d3).
+The example without considering trust can be run [here](https://dtai.cs.kuleuven.be/problog/editor.html#task=prob&hash=c0256558fc411afe2f70a38b52058378), whilst the one that includes trust propagation can be run [here](https://dtai.cs.kuleuven.be/problog/editor.html#task=prob&hash=25bbacb9ad8e4120ca7a68aa94e5d0a8).
