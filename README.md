@@ -9,25 +9,25 @@ SecFog is written in the [ProbLog2 language](https://dtai.cs.kuleuven.be/problog
 Considering a single-service application, managing the weather data of a municipality, and an infrastructure composed of two (one Cloud and one Edge) nodes declared as follows:
 
 ```prolog
-    %%% Application, specified by appOp
-    app(weatherApp, [weatherMonitor]).
-    securityRequirements(weatherMonitor, N) :-
-        (anti_tampering(N); access_control(N)),
-        (wireless_security(N); iot_data_encryption(N)).
-    
-    %%% Cloud node, specified by cloudOp
-    node(cloud, cloudOp).
-    0.99::anti_tampering(cloud).
-    0.99::access_control(cloud).
-    0.99::iot_data_encryption(cloud).
-    
-    %%% Edge node, specified by edgeOp
-    node(edge, edgeOp).
-    0.85::anti_tampering(edge).
-    0.9::wireless_security(edge).
-    0.9::iot_data_encryption(edge).
-    
-    query(secFog(appOp,weatherApp,D)).
+%%% Application, specified by appOp
+app(weatherApp, [weatherMonitor]).
+securityRequirements(weatherMonitor, N) :-
+    (anti_tampering(N); access_control(N)),
+    (wireless_security(N); iot_data_encryption(N)).
+
+%%% Cloud node, specified by cloudOp
+node(cloud, cloudOp).
+0.99::anti_tampering(cloud).
+0.99::access_control(cloud).
+0.99::iot_data_encryption(cloud).
+
+%%% Edge node, specified by edgeOp
+node(edge, edgeOp).
+0.8::anti_tampering(edge).
+0.9::wireless_security(edge).
+0.9::iot_data_encryption(edge).
+
+query(secFog(appOp,weatherApp,D)).
 ```
 
 outputs the resulting secure deployments for the ```weatherApp```, along with a value in the range [0,1] that represents their assessed security level (based on the declared effectiveness of infrastructure capabilities that are exploited by each possible deployment):
