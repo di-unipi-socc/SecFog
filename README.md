@@ -1,4 +1,5 @@
-# SecFog
+
+<img src="https://github.com/di-unipi-socc/SecFog/blob/master/img/secfog.bmp" width="250">
 
 SecFog is a simple declarative prototype that can be used to find multi-service application deployments to
 Cloud-Edge infrastructures and to assess their security level based on specific application security requirements, available infrastructure security capabilities, and considering trust degrees in different Edge and Cloud providers. SecFog constitutes a first, well-founded and explainable effort towards this direction.
