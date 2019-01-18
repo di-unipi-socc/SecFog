@@ -51,7 +51,7 @@ As for the AND-OR graph of the ground program, also this proof can be obtained a
 
 A trust network among different stakeholders can also be defined and included in the security assessment of eligible secure deployments:
 
-```
+```prolog
 %%% trust relations declared by appOp
 .9::trusts(appOp, edgeOp).  
 .9::trusts(appOp, ispOp).
