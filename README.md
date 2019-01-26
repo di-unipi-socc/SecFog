@@ -9,7 +9,8 @@ SecFog is written in the [ProbLog2 language](https://dtai.cs.kuleuven.be/problog
 SecFog methodology is described in the following technical report:
 
 > [Antonio Brogi](http://pages.di.unipi.it/brogi), [Gian-Luigi Ferrari](http://pages.di.unipi.it/giangi), [Stefano Forti](http://pages.di.unipi.it/forti)<br>
-> <img src="http://pages.di.unipi.it/forti/symbols/informal.png" width="15"> [**Secure Cloud-Edge Deployments, with Trust**](https://arxiv.org/abs/1901.05347),	arXiv:1901.05347 \[cs.NI\], arXiv Pre-print, 2019.
+> [**Secure Cloud-Edge Deployments, with Trust**](https://arxiv.org/abs/1901.05347),	
+> arXiv:1901.05347 \[cs.NI\], arXiv Pre-print, 2019.
 
 If you wish to reuse source code in this repo, please consider citing the above mentioned articles.
 
