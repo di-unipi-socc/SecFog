@@ -12,7 +12,7 @@ SecFog methodology is described in the following technical report:
 > [**Secure Cloud-Edge Deployments, with Trust**](https://arxiv.org/abs/1901.05347), <br>	
 > arXiv:1901.05347 \[cs.NI\], arXiv Pre-print, 2019.
 
-If you wish to reuse source code in this repo, please consider citing the above mentioned articles.
+If you wish to reuse source code in this repo, please consider citing the above mentioned article.
 
 ### Example
 Considering a single-service application, managing the weather data of a municipality, and an infrastructure composed of two (one Cloud and one Edge) nodes declared as follows:
