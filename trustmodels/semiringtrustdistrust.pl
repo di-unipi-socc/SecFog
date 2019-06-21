@@ -6,7 +6,7 @@
     sr_zero,   % neutral element of addition
     sr_one,    % neutral element of multiplication
     sr_neg,    % negation of fact label
-    false,      % requires solving disjoint sum problem?
+    false,     % requires solving disjoint sum problem?
     false).    % requires solving neutral sum problem?
 
 sr_zero((0.0, 0.0)).
@@ -17,9 +17,9 @@ sr_times((Ta, Ca), (Tb, Cb), (Tc, Cc)) :- Tb >= 0, Tc is Ta*Tb, Cc is Ca*Cb.
 
 sr_plus((Ta, Ca), (Tb, Cb), (Ta, Ca)) :- Ca > Cb.
 sr_plus((Ta, Ca), (Tb, Cb), (Tb, Cb)) :- Cb > Ca.
-sr_plus((Ta, Ca), (Tb, Cb), (Tc, Ca)) :- Ca == Cb, Tc is sign(Ta+Tb) * max(Ta, Tb).
-sr_neg((Ta, Ca), (Tb, Ca)) :- Ta > 0, Tb is 1.0-Ta.
-sr_neg((Ta, Ca), (Tb, Ca)) :- Ta =< 0, Tb is Ta-1.0.
+sr_plus((Ta, Ca), (Tb, Cb), (Tc, Ca)) :- Ca == Cb, Tc is (sign(Ta+Tb) * max(Ta, Tb)).
+sr_neg((Ta, Ca), (Tb, Ca)) :- Ta >= 0, Tb is 1.0-Ta.
+sr_neg((Ta, Ca), (Tb, Ca)) :- Ta < 0, Tb is Ta-1.0. 
 
 
 secFog(OpA, A, D) :-
@@ -30,16 +30,19 @@ deployment(_,[],[]).
 deployment(OpA,[C|Cs],[d(C,N,OpN)|D]) :-
     node(N,OpN),
     securityRequirements(C,N),
-    trusts2(OpA, OpN),
+    trusts2(OpA, OpN, 2),
     deployment(OpA,Cs,D).
 
 trusts(X,X).
 
-trusts2(A,B) :-
+trusts2(A,B,D) :-
+    D > 0,
     trusts(A,B).
-trusts2(A,B) :-
+trusts2(A,B,D) :-
+    D > 0,
     trusts(A,C),
-    trusts2(C,B).
+    NewD is D - 1,
+    trusts2(C,B,NewD).
 
 query(secFog(appOp,smartbuilding,D)).
 
@@ -74,20 +77,19 @@ secure_storage(N) :-
     (encrypted_storage(N); obfuscated_storage(N)).
 
 %%% trust relations declared by appOp
-(-0.9,0.8)::trusts(appOp, edgeOp).
-(0.8,0.5)::trusts(appOp, cloudOp2).
+(0.9,0.9)::trusts(appOp, edgeOp).
+(-0.8,0.9)::trusts(appOp, cloudOp2).
 
 %%% trust relations declared by edgeOp
-(-0.9,0.9)::trusts(edgeOp, cloudOp2).
-(0.7,0.9)::trusts(edgeOp, cloudOp1).
+(0.9,0.9)::trusts(edgeOp, cloudOp2).
+(0.7,0.5)::trusts(edgeOp, cloudOp1).
 
 %%% trust relations declared by cloudOp2
-(0.1,0.9)::trusts(cloudOp1, cloudOp2).
+(-0.1,0.9)::trusts(cloudOp1, cloudOp2).
 
 %%% trust relations declared by cloudOp2
 (0.8,0.7)::trusts(cloudOp2, edgeOp).
-(0.5,0.7)::trusts(cloudOp2, cloudOp1).
-
+(-0.1,0.7)::trusts(cloudOp2, cloudOp1).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% cloud1 %%%%%%%%%%

@@ -69,12 +69,12 @@ secure_storage(N) :-
     (encrypted_storage(N); obfuscated_storage(N)).
 
 %%% trust relations declared by appOp
-(0.9,0.8)::trusts(appOp, edgeOp).
-(0.8,0.5)::trusts(appOp, cloudOp2).
+(0.9,0.9)::trusts(appOp, edgeOp).
+(0.8,0.9)::trusts(appOp, cloudOp2).
 
 %%% trust relations declared by edgeOp
 (0.9,0.9)::trusts(edgeOp, cloudOp2).
-(0.7,0.9)::trusts(edgeOp, cloudOp1).
+(0.7,0.5)::trusts(edgeOp, cloudOp1).
 
 %%% trust relations declared by cloudOp2
 (0.1,0.9)::trusts(cloudOp1, cloudOp2).
