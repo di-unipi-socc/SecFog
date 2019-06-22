@@ -1,0 +1,24 @@
+secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud1,cloudOp1)]): 0.000511334799214, 0.250047
+secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud2,cloudOp2)]): 0.005094962939305, 0.35721
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,cloud1,cloudOp1), d(dashboard,edge3,edgeOp)]): 0.005528055279312, 0.35721
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,edge3,edgeOp), d(dashboard,cloud1,cloudOp1)]): 0.005419130751212, 0.35721
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,edge3,edgeOp), d(dashboard,cloud2,cloudOp2)]): 0.053996462558657, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,cloud1,cloudOp1), d(data_storage,edge3,edgeOp), d(dashboard,edge3,edgeOp)]): 0.058586379031093, 0.5103
+secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud1,cloudOp1)]): 0.005099552996008, 0.35721
+secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud2,cloudOp2)]): 0.050812175431129, 0.5103
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,cloud1,cloudOp1), d(dashboard,edge3,edgeOp)]): 0.055131414691633, 0.5103
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,edge3,edgeOp), d(dashboard,cloud1,cloudOp1)]): 0.054045108020422, 0.5103
+   secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,edge3,edgeOp), d(dashboard,cloud2,cloudOp2)]): 0.538507887275208, 0.729
+      secFog(appOp,smartbuilding,[d(iot_controller,cloud2,cloudOp2), d(data_storage,edge3,edgeOp), d(dashboard,edge3,edgeOp)]): 0.584283223384603, 0.729
+   secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud1,cloudOp1)]): 0.00466093649896, 0.35721
+   secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud2,cloudOp2)]): 0.046441780925492, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,edge3,edgeOp)]): 0.050389519076813, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,cloud1,cloudOp1)]): 0.049396646482514, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,cloud2,cloudOp2)]): 0.492190407422769, 0.729
+         secFog(appOp,smartbuilding,[d(iot_controller,edge2,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,edge3,edgeOp)]): 0.534028571471949, 0.729
+   secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud1,cloudOp1)]): 0.005583335832105, 0.35721
+   secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,cloud2,cloudOp2)]): 0.055632609370647, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,cloud1,cloudOp1), d(dashboard,edge3,edgeOp)]): 0.060361604902114, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,cloud1,cloudOp1)]): 0.059172242821403, 0.5103
+      secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,cloud2,cloudOp2)]): 0.589594889051735, 0.729
+         secFog(appOp,smartbuilding,[d(iot_controller,edge3,edgeOp), d(data_storage,edge3,edgeOp), d(dashboard,edge3,edgeOp)]): 0.639712825766248, 0.729
