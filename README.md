@@ -6,7 +6,7 @@ Cloud-Edge infrastructures and to assess their security level based on specific 
 
 SecFog is written in the [ProbLog2 language](https://dtai.cs.kuleuven.be/problog/index.html) and it can be used together with existing approaches (e.g., [FogTorchPi](https://github.com/di-unipi-socc/FogTorchPI/tree/multithreaded)) that solve the problem of mapping IoT application services to Cloud-Edge infrastructures according to requirements other than security and trust.
 
-SecFog methodology is described in the following technical report:
+SecFog methodology is described in the following journal article:
 
 > [Stefano Forti](http://pages.di.unipi.it/forti), [Gian-Luigi Ferrari](http://pages.di.unipi.it/giangi), [Antonio Brogi](http://pages.di.unipi.it/brogi)<br>
 > [**Secure Cloud-Edge Deployments, with Trust**](https://doi.org/10.1016/j.future.2019.08.020), <br>	
