@@ -6,13 +6,19 @@ Cloud-Edge infrastructures and to assess their security level based on specific 
 
 SecFog is written in the [ProbLog2 language](https://dtai.cs.kuleuven.be/problog/index.html) and it can be used together with existing approaches (e.g., [FogTorchPi](https://github.com/di-unipi-socc/FogTorchPI/tree/multithreaded)) that solve the problem of mapping IoT application services to Cloud-Edge infrastructures according to requirements other than security and trust.
 
-SecFog methodology is described in the following journal paper:
+SecFog methodology is fully described in the following journal paper:
 
 > [Stefano Forti](http://pages.di.unipi.it/forti), [Gian-Luigi Ferrari](http://pages.di.unipi.it/giangi), [Antonio Brogi](http://pages.di.unipi.it/brogi)<br>
 > [**Secure Cloud-Edge Deployments, with Trust**](https://doi.org/10.1016/j.future.2019.08.020), <br>	
 > Future Generation Computer Systems, vol. 102, pp. 775-788, 2020. 
 
-If you wish to reuse source code in this repo, please consider citing the above mentioned article.
+The combined usage of default SecFog and FogTorchPi for optimising Cloud-Edge (a.k.a. Fog) application placements is illustrated in the following conference article: 
+
+> [Stefano Forti](http://pages.di.unipi.it/forti), [Gian-Luigi Ferrari](http://pages.di.unipi.it/giangi), [Antonio Brogi](http://pages.di.unipi.it/brogi)<br>
+> [**Secure Apps in the Fog: Anything to Declare?**](https://link.springer.com/chapter/10.1007/978-3-030-63161-1_4), <br>	
+> Advances in Service-Oriented and Cloud Computing (ESOCC2018). Communications in Computer and Information Science, vol 1115., Springer, 2020.
+
+If you wish to reuse source code in this repo, please consider citing the above mentioned articles.
 
 ### Example
 Considering a single-service application, managing the weather data of a municipality, and an infrastructure composed of two (one Cloud and one Edge) nodes declared as follows:
